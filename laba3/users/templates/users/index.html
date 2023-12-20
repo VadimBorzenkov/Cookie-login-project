@@ -1,0 +1,19 @@
+{% extends 'users/base.html' %}
+
+
+<body>
+    {% block nav%}
+    <ul class="nav-list">
+        <li><a class="nav-button" href="{% url 'login' %}">Authorisation</a></li>
+        <li><a href="{% url 'registration' %}">Registration</a></li>
+        <li><a href="{% url 'user_json_view' %}">User JSONRESPONSE</a></li>
+        <li><a href="{% url 'logout' %}">Exit</a></li>
+    </ul>
+    {% endblock %}
+    {% block content%}
+    <p>Welcome</p>
+    {% endblock %}
+
+</body>
+
+</html>
